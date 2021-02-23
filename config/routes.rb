@@ -7,7 +7,13 @@ Rails.application.routes.draw do
   get 'tasks/new', to: 'tasks#new'
   post 'tasks', to: 'tasks#create'
 
+  # Edit a task
+  get 'tasks/:id/edit', to: 'tasks#edit', as: :task_edit
+  patch 'tasks/:id', to: 'tasks#update'
+
   # Display details for 1 task
   get 'tasks/:id', to: 'tasks#show', as: :task
 
+  # Delete
+  delete "tasks/:id", to: 'tasks#destroy'
 end

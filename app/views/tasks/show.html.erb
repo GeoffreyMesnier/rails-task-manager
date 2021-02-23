@@ -10,4 +10,7 @@
   <p><input type="checkbox">This task is not completed now</p>
  <% end %>
 
-<%= link_to "Back to list", tasks_path  %>
+<%= link_to "Back to list", tasks_path, class: "btn btn-flat"  %>
+
+<%= link_to "Edit the task", task_edit_path(@task.id), class: "btn btn-flat"  %>
+

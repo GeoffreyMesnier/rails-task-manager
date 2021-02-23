@@ -13,3 +13,23 @@ ul {
 li {
   list-style: none;
 }
+
+
+
+.btn-flat {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: blue;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-delete {
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: blue;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
